@@ -1,0 +1,22 @@
+server {
+    listen 80;
+    server_name {{eth2_testnet_site_domain}};
+    location / {
+      return 302 https://{{eth2_testnet_site_domain}};
+    }
+}
+
+server {
+    listen 443 ssl;
+
+    server_name {{eth2_testnet_site_domain}};
+
+    ssl_certificate     {{eth2_testnet_site_ssl_crt_path}};
+    ssl_certificate_key {{eth2_testnet_site_ssl_key_path}};
+
+    location / {
+      root {{eth2_testnet_site_root}};
+      autoindex on;
+    }
+}
+

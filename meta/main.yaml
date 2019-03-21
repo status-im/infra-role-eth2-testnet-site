@@ -1,0 +1,13 @@
+---
+galaxy_info:
+  author: Zahary Karadjov <zahary@status.im>
+  description: Setup a Nginx site hosting the Nimbus serenity testnet files
+  company: Status.im
+  license: MIT
+  min_ansible_version: 1.9
+  platforms:
+  - name: Ubuntu
+    versions:
+    - xenial
+dependencies: []
+

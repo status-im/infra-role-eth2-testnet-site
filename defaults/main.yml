@@ -1,0 +1,6 @@
+---
+eth2_testnet_site_root: '/var/www/serenity-testnets'
+eth2_testnet_site_domain: 'serenity-testnets.status.im'
+eth2_testnet_site_ssl_crt_path: '/certs/origin.crt'
+eth2_testnet_site_ssl_key_path: '/certs/origin.key'
+
