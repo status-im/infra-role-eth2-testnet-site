@@ -35,7 +35,8 @@
 
 - name: Fix the permissions just in case
   file:
-    dest: '{{eth2_testnet_site_root}}'
+    path: '{{eth2_testnet_site_root}}'
+    state: directory
     owner: 'www-data'
     group: 'www-data'
     recurse: true
