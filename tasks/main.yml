@@ -26,11 +26,11 @@
     version: 'master'
     depth: 1
     update: true
-    dest: '/opt/nim-eth-testnet-data'
+    dest: '/opt/nim-eth2-testnet-data'
   register: repo
 
 - name: Copy the public tesnet files
-  shell: 'cp -r /opt/nim-eth-testnet-data/www/* {{eth2_testnet_site_root}}'
+  shell: 'cp -r /opt/nim-eth2-testnet-data/www/* {{eth2_testnet_site_root}}'
   when: repo.changed
 
 - name: Fix the permissions just in case
